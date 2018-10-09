@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title></title>
     <style>
-
+html, body {
+  margin-top: 0px;
+  margin-left: 0px;
+}
   #top {
     margin-top: 50px;
     margin-left:50px;
@@ -12,7 +15,9 @@
     width: 100px;
     display: inline-block;
     background-color: black;
+    position: relative;
   }
+
   #side {
     margin-top: 50px;
     margin-left:50px;
@@ -20,15 +25,92 @@
     height: 100px;
     width: 100px;
     background-color: black;
+    position: relative;
+  }
+  #background_top {
+    margin-top: 0px;
+    margin-left:0px;
+    display: inline-block;
+    height: 200px;
+    width: 350px;
+    background-color: red;
+    position: absolute;
+  }
+  #top2 {
+    margin-top: 50px;
+    margin-left:50px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: black;
+    position: relative;
+  }
+  #side2 {
+    margin-top: 50px;
+    margin-left:50px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+  }
+  #background_top2 {
+    margin-top: 0px;
+    margin-left:0px;
+    display: inline-block;
+    height: 200px;
+    width: 350px;
+    background-color: blue;
+    position: absolute;
+  }
+
+  .rectangle {
+    /* background-color: "red"; */
+    display: inline-block;
+    height: 200px;
+    width: 350px;
+    margin: 0px;
+    float: left;
+    /* position: relative; */
+  }
+
+  .rectangle:first-child {
+    background-color: red;
+  }
+
+  .rectangle:last-child {
+    background-color: blue;
+  }
+
+  .square {
+    margin-top: 50px;
+    margin-left:50px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: black;
+    position: relative;
   }
     </style>
   </head>
   <body>
-
-    <div id= "top">
-    </div>
-
-    <div id= "side">
+    <div class="base-container">
+      <div class="rectangle">
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div class="rectangle">
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
     </div>
   </body>
+  <!-- <body>
+    <div id="background_top"></div>
+    <div id="top"></div>
+    <div id="side"></div>
+    <div id="background_top2"></div>
+    <div id="top2"></div>
+    <div id= "side2"></div>
+  </body> -->
 </html>
