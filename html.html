@@ -5,103 +5,69 @@
     <title></title>
     <style>
 html, body {
-  margin-top: 0px;
-  margin-left: 0px;
+  margin-top: 25px;
+  margin-left: 5px;
 }
-  #top {
-    margin-top: 50px;
-    margin-left:50px;
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    background-color: black;
-    position: relative;
+  .heading {
+    font-family: sans-serif;
   }
-
-  #side {
-    margin-top: 50px;
-    margin-left:50px;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    background-color: black;
-    position: relative;
-  }
-  #background_top {
-    margin-top: 0px;
-    margin-left:0px;
-    display: inline-block;
-    height: 200px;
-    width: 350px;
-    background-color: red;
-    position: absolute;
-  }
-  #top2 {
-    margin-top: 50px;
-    margin-left:50px;
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    background-color: black;
-    position: relative;
-  }
-  #side2 {
-    margin-top: 50px;
-    margin-left:50px;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    background-color: black;
-    position: relative;
-  }
-  #background_top2 {
-    margin-top: 0px;
-    margin-left:0px;
-    display: inline-block;
-    height: 200px;
-    width: 350px;
-    background-color: blue;
-    position: absolute;
-  }
-
   .rectangle {
     /* background-color: "red"; */
     display: inline-block;
-    height: 200px;
-    width: 350px;
-    margin: 0px;
-    float: left;
+    height: 130px;
+    width: 600px;
+    margin: 5px;
+    background-color: #555555;
+    float: left
     /* position: relative; */
   }
 
-  .rectangle:first-child {
-    background-color: red;
-  }
-
-  .rectangle:last-child {
-    background-color: blue;
-  }
-
-  .square {
-    margin-top: 50px;
-    margin-left:50px;
-    height: 100px;
-    width: 100px;
+  .block{
     display: inline-block;
-    background-color: black;
-    position: relative;
+    height: 120px;
+    width: 193px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #cccccc;
+    float: left;
+
   }
+
+  .block:first-child {
+    margin-right: 0px;
+    margin-left: 5px;
+
+  }
+  .block:nth-child(2) {
+    margin-right: 5px;
+    margin-left: 5px
+  }
+  .block:nth-child(3) {
+    margin-right: 0px;
+    margin-left: 0px
+  }
+
     </style>
   </head>
   <body>
+    <h1 class="heading"> AAAAAHHHHHHH</h1>
     <div class="base-container">
       <div class="rectangle">
-        <div class="square"></div>
-        <div class="square"></div>
+        <div class="block col-3"></div>
+        <div class="block col-3"></div>
+        <div class="block col-3"></div>
       </div>
       <div class="rectangle">
-        <div class="square"></div>
-        <div class="square"></div>
+        <!-- <div class="block col-4"></div>
+        <div class="block col-4"></div>
+        <div class="block col-4"></div>
+        <div class="block col-4"></div> -->
+      </div>
+      <div class="rectangle">
+        <!-- <div class="block col-2"></div>
+        <div class="block col-2"></div> -->
       </div>
     </div>
   </body>
